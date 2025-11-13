@@ -17,21 +17,9 @@ class LoginController extends GetxController {
       isLoading.value = true;
 
       Future.delayed(const Duration(seconds: 1), () async{
-      //  await sendSms("+919307210205", "Welcome Back!");  // await needs ?
+       await sendSms("+919307210205", "Welcome Back!");  
         
         isLoading.value = false;
-
-        // Dummy authentication logic
-        // if (emailController.text == "test@gmail.com" &&
-        //     passwordController.text == "password123") {
-        //   Get.off(() => const DashboardScreen());
-        // } else {
-        //   Get.snackbar("Error", "Invalid email or password",
-        //       snackPosition: SnackPosition.BOTTOM);
-        // }
-
-        // Direct navigation (as per your version)
-
 
         Get.off(() => const DashboardScreen());
       });

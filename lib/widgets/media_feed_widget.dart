@@ -70,7 +70,7 @@ class MediaFeedWidget extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            // Cached image with smooth placeholder
+                           
                             ClipRRect(
                               borderRadius: BorderRadius.circular(12),
                               child: item.url.endsWith(".mp4") // detect if it's a video
@@ -147,7 +147,7 @@ class MediaFeedWidget extends StatelessWidget {
                                         );
                                       },
                                 icon: const Icon(Icons.analytics_outlined,
-                                    size: 16),
+                                    size: 16,color: Colors.white,),
                                 label: const Text(
                                   "Analyze",
                                   style: TextStyle(

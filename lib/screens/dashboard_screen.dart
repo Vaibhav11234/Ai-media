@@ -14,18 +14,12 @@ class DashboardScreen extends StatelessWidget {
       length: 2,
       child: Scaffold(
         backgroundColor: Colors.white,
-        // ✅ Removed AppBar completely
         body: Column(
           children: [
-            // ✅ TabBar moved here at top inside body
             Container(
               padding: EdgeInsets.only(top: 40),
               decoration: const BoxDecoration(
                 color: Color(0xFF6A1B9A),
-                // borderRadius: BorderRadius.only(
-                //   bottomLeft: Radius.circular(12),
-                //   bottomRight: Radius.circular(12),
-                // ),
               ),
               child: const TabBar(
                 indicatorColor: Colors.white,
@@ -38,7 +32,6 @@ class DashboardScreen extends StatelessWidget {
                 ],
               ),
             ),
-            // ✅ Expanded TabBarView to fill rest of the screen
             Expanded(
               child: TabBarView(
                 children: [
